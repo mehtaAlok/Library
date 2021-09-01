@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="Library.css">
 <head>
     <title>Library</title>
 </head>
+
 <body>
-    
+ <h1>Library</h1>
+ <form id="myForm" action="#" onsubmit="return bookInputFromForm(this)">
+  <label for="title">Title</label>
+  <input id="title"></input>
+  <label for="auth">Author</label>
+  <input id="auth"></input>
+  <label for="pages">Pages</label>
+  <input id="pages"></input>
+  <label for="read">Read?</label>
+  <input type="checkbox" onClick="checkRead()" id="read"></input>
+  <button type="submit">Add Book</button>
+</form>
+ <div id="books-grid"></div>
+  <script src="Library.js"></script> 
 </body>
+
 </html>
